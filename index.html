@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>САМ СЕБЕ СТО</title>
     <link rel=icon href=images/faviconnew.png>
 
@@ -66,11 +67,11 @@
     </nav>
 
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="body-to-fix">
 
         <div class="row about" id="about">
             <div class="container">
-                <div class="about-ava col-lg-5 col-xs-8 col-md-6 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-lg-offset-1">
+                <div class="about-ava col-lg-5 col-xs-8 col-md-12 col-sm-6 col-xs-offset-2 col-sm-offset-3 col-lg-offset-1">
                     <img src="images/avawhite.png" alt="СТО САМООБСЛУЖИВАНИЯ" class="img-responsive">
                 </div>
 
@@ -140,48 +141,9 @@
 
         <hr>
 
-        <div class="row" id="tools">
-            <h2 class="text-center">Наш инструмент</h2>
-            <div class="grow instr-image col-lg-2 col-md-3 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="instr/compressor.jpg" alt="Компрессор">
-                <p class="text-center instr-descr">Компрессор</p>
-            </div>
-            <div class="grow instr-image col-lg-2 col-md-3 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="instr/domkrat.jpg" alt="Домкрат">
-                <p class="text-center instr-descr">Домкрат</p>
-            </div>
-            <div class="grow instr-image col-lg-2 col-md-3 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="instr/pilesoshuesos.jpg" alt="Пылесос">
-                <p class="text-center instr-descr">Пылесос</p>
-            </div>
-                <div class="grow instr-image col-lg-2 col-md-3 col-sm-3 col-xs-4">
-                <img class="img-responsive vertical-image" src="instr/press.jpg" alt="Пресс">
-                <p class="text-center instr-descr">Пресс</p>
-            </div>
-            <div class="grow instr-image col-lg-2 col-md-3 col-sm-3 col-xs-4">
-                <img class="img-responsive vertical-image" src="instr/nabor-golovom.jpg" alt="Набор головок">
-                <p class="text-center instr-descr">Набор головок</p>
-            </div>
-            <div class="grow instr-image col-lg-2 col-md-3 col-sm-3 col-xs-4">
-                <img class="img-responsive" src="instr/nr-kluchei.jpg" alt="Набор ключей">
-                <p class="text-center instr-descr">Набор ключей</p>
-            </div>
-            <!--<span class="hidden" id="hidden-images">-->
-            <!--</span>-->
-
-        </div>
-        <a href="https://vk.com/album-119989699_231237371" target="_blank" class="podrobnoe"><h3
-                class="text-center">Весь инструмент в группе
-            <i class="fa fa-vk" aria-hidden="true"></i></h3></a>
-
-        <!--<div class="text-center" id="show-more-images-link" onclick="showMoreImages()"><h3>Показать еще <i-->
-                <!--class="fa fa-arrow-down" aria-hidden="true"></i>-->
-        <!--</h3></div>-->
-        <hr>
-
-
         <div class="row" id="google-map">
             <h2 class="text-center">Где нас искать?</h2>
+            <h3 class="text-center">ул. Красная 7</h3>
             <div id="map"></div>
             <script>
                 function initMap() {

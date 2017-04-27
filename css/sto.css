@@ -1,5 +1,5 @@
 p, h1, h2, h3 {
-    font-family: Tahoma;
+    font-family: Tahoma, Verdana, Helvetica ;
 }
 
 p {
@@ -51,9 +51,12 @@ h1, h2 {
     background-color: rgba(0, 0, 0, 0.95);
 }
 .about {
-    padding-top: 45px;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+#about {
+    padding-top: 45px;
 }
 a {
     color: #9e0000;
@@ -74,8 +77,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
     color: #F3F3F3;
+    /*width: 535px;*/
 }
 #body-overlay {
     background: rgba(0, 0, 0, 0.9);

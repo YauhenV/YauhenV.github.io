@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    mobileSize();
     $(".four-reasons-div").hover(
         function () {
         $(this).find('i').addClass('animated tada infinite')},
@@ -84,9 +84,15 @@ function replaceButtons() {
         $('#main-h').before(buttons);
     }
 }
+function mobileSize() {
+    console.log('meow');
 
-function enlargeInstrImage() {
-
+    if($(window).width() < 800) {
+        $('body').css('width', '535px');
+        $('h1').css('font-size', '38px');
+        $('h2').css('font-size', '38px');
+        $('#about').css('padding-top', '2px');
+        console.log('meow');
+    }
 }
-
 
