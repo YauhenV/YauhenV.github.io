@@ -1,5 +1,6 @@
 $(document).ready(function () {
     mobileSize();
+    coloredSigns();
     $(".four-reasons-div").hover(
         function () {
         $(this).find('i').addClass('animated tada infinite')},
@@ -78,21 +79,25 @@ function showMoreImages() {
 
 function replaceButtons() {
     var buttons = $('#abbuttons').clone();
-    console.log($(window).width());
     if($(window).width() <= 1200) {
         $('#abbuttons').remove();
         $('#main-h').before(buttons);
     }
 }
 function mobileSize() {
-    console.log('meow');
 
     if($(window).width() < 800) {
         $('body').css('width', '535px');
         $('h1').css('font-size', '38px');
         $('h2').css('font-size', '38px');
         $('#about').css('padding-top', '2px');
-        console.log('meow');
     }
 }
 
+function coloredSigns() {
+    if($(window).width() <= 1200) {
+        $("#re div:nth-child(3n + 1) i").css('color', '#DD0000');
+    } else {
+        $("#re div:nth-child(2n + 1) i").css('color', '#DD0000');
+    }
+}

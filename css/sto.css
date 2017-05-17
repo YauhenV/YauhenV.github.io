@@ -66,10 +66,6 @@ a:hover {
     text-decoration: none;
 }
 
-#re div:nth-child(2n + 1) i {
-    color: #DD0000;
-}
-
 body {
     padding-top: 50px;
     background: url("../images/bg1068.jpg") no-repeat center center fixed;
@@ -274,4 +270,35 @@ h2 {
 
 .footer-img {
     max-width: 300px;
+}
+
+#about-start {
+    border: #A00000 6px solid;
+    display: inline-block;
+    padding: 6px 50px 6px 50px;
+}
+
+.phonenumbers {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.priceslist ul li, .priceslist p {
+    font-size: 19px;
+}
+
+.priceslist h3 {
+    font-weight: bold;
+}
+
+.prices-bold {
+    font-weight: bold;
+}
+
+.fotorama__thumb-border {
+    border-color: #A00000;
+}
+
+#aboutush:hover, #actionh:hover, #toolsh:hover, #google-maph:hover, #pricesh:hover, #galleryh:hover, #reviewsh:hover {
+    color: #dd0000; !important;
 }

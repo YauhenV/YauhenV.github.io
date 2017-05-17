@@ -44,22 +44,25 @@
             <div class="collapse navbar-collapse" id="navbar-items">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#aboutus">О НАС</a>
+                        <a href="#aboutus" id="aboutush">О НАС</a>
                     </li>
                     <li>
-                        <a href="#tools">ИНСТРУМЕНТ</a>
+                        <a href="#tools" id="toolsh">ИНСТРУМЕНТ</a>
                     </li>
                     <li>
-                        <a href="#google-map">КАРТА</a>
+                        <a href="#google-map" id="google-maph">КАРТА</a>
                     </li>
                     <li>
-                        <a href="#gallery">ФОТО</a>
+                        <a href="#prices" id="pricesh">ЦЕНА</a>
                     </li>
                     <li>
-                        <a href="#reviews">ОТЗЫВЫ</a>
+                        <a href="#gallery" id="galleryh">ФОТО</a>
+                    </li>
+                    <li>
+                        <a href="#reviews" id="reviewsh">ОТЗЫВЫ</a>
                     </li>
                     <li id="action-nav">
-                        <a href="#action">АКЦИЯ</a>
+                        <a href="#action" id="actionh">АКЦИЯ</a>
                     </li>
                 </ul>
             </div>
@@ -82,11 +85,13 @@
                         только за
                         время проведенное у нас!
                     </p>
-                    <p>Запись по телефонам:</p>
-                    <p>+375-44-748-90-91</p>
-                    <p>+375-29-260-79-73</p>
-                    <p>г. Минск, ул. Красная 7</p>
+                    <div id="about-start">
+                        <p>Запись по телефонам:</p>
+                        <p class="phonenumbers">+375-44-748-90-91</p>
+                        <p class="phonenumbers">+375-29-260-79-73</p>
+                        <p>г. Минск, ул. Красная 7<br> (Территория завода Горизонт)</p>
 
+                    </div>
                 </div>
 
             </div>
@@ -100,7 +105,7 @@
         <div class="row text-center specdesc">
             <div class="col-lg-8 col-lg-offset-2"><h3>СТО самообслуживания - это такое место, где ВЫ сами сможете
                 самостоятельно обслужить свою машину и будете уверены что все работы выполнены качественно.</h3>
-                <h3>Мы предоставляем Вам ПОМЕЩЕНИЕ с ямами, многочисленного оборудованием и инструментом для ремонта
+                <h3>Мы предоставляем Вам помещение с ямами, многочисленным оборудованием и инструментом для ремонта
                     Авто
                     В САМОМ ЦЕНТРЕ МИНСКА (ул. Красная, 7).</h3>
                 <h3>Также вы можете обратиться за консультацией к нашим специалистам.</h3>
@@ -192,18 +197,18 @@
         <hr>
 
         <div class="row text-center" id="prices">
-            <h2>Всего 3 рубля за полчаса!</h2>
+            <h2>Всего 6 рублей за час!</h2>
         </div>
-        <div class="row text-center specdesc">
-            <div class="col-lg-8 col-lg-offset-2"><h3>Мы рады сообщить о наших низких ценах! </h3>
-                <h3>Всего 3 рубля за 30 минут!</h3>
-                <h3>Дополнительные услуги:</h3>
-                <ul>
-                    <li>Помощь мастеров - 1р/час</li>
-                    <li>Сварочный аппарат - 1р/час</li>
-                    <li>Набор головок - 1р/час</li>
-                </ul>
-            </div>
+
+        <div class="text-center priceslist">
+            <h3>Помещение</h3>
+            <p>Стоимость часа составляет <span class="prices-bold">6 руб.</span></p>
+            <h3>Инструмент</h3>
+            <ul>
+                <li>Набор головок или набора ключей - <span class="prices-bold">1 бел. руб. в час</span></li>
+                <li>Сварочный аппарат - <span class="prices-bold">6 бел. руб. в час</span></li>
+                <li>Бензиновый компрессометр - <span class="prices-bold">2 бел. руб</span></li>
+            </ul>
         </div>
         <hr>
 
@@ -277,7 +282,7 @@
             <!--<img class="img-responsive footer-img" src="images/1.png" alt="СТО САМООБСЛУЖИВАНИЯ">-->
             <!--</div>-->
             <div class="text-center">
-                <p id="footertitle">САМ СЕБЕ СТО</p>
+                <p id="footertitle" >САМ СЕБЕ СТО</p>
                 <p>+375-44-748-90-91</p>
                 <p>+375-29-260-79-73</p>
                 <p>г. Минск, ул. Красная 7</p>
