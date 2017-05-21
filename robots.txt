@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /css/
+Disallow: /instr/
+Disallow: /vendor/
+Disallow: /js/
+
+User-agent: Yandex
+Disallow: /css/
+Disallow: /instr/
+Disallow: /vendor/
+Disallow: /js/
+Host: www.samsto.by
+
