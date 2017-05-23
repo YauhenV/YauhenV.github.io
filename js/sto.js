@@ -1,6 +1,7 @@
 $(document).ready(function () {
     mobileSize();
     coloredSigns();
+    arrowJump();
     $(".four-reasons-div").hover(
         function () {
         $(this).find('i').addClass('animated tada infinite')},
@@ -80,4 +81,17 @@ function coloredSigns() {
     } else {
         $("#re div:nth-child(2n + 1) i").css('color', '#DD0000');
     }
+}
+
+function arrowJump() {
+    console.log('meow');
+    $("#arrow-down").animate({
+
+        transform: 'translateY(50px)'
+    }, 1000, function() {
+        $("#arrow-down").animate({
+            transform: 'translateY(-50px)'
+        }, 800, arrowJump());
+    });
+    console.log('meow');
 }

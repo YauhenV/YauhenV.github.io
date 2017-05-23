@@ -51,12 +51,12 @@ h1, h2 {
     background-color: rgba(0, 0, 0, 0.95);
 }
 .about {
-    margin-top: 50px;
-    margin-bottom: 50px;
+
+    margin-bottom: 20px;
 }
 
 #about {
-    padding-top: 45px;
+    padding-top: 30px;
 }
 a {
     color: #9e0000;
@@ -301,4 +301,16 @@ h2 {
 
 #aboutush:hover, #actionh:hover, #toolsh:hover, #google-maph:hover, #pricesh:hover, #galleryh:hover, #reviewsh:hover {
     color: #dd0000; !important;
+}
+
+#arrow-down {
+    color: #DD0000;
+}
+
+.tools-body h3, .tools-body i {
+    display: inline-block;
+}
+
+#arrow-down {
+    transform: translateY(0);
 }
