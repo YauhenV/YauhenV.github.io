@@ -8,15 +8,6 @@ $(document).ready(function () {
         $(this).find('i').removeClass('animated tada infinite')
     });
 
-    // $('.instr-image').hover(
-    //     function () {
-    //         console.log('meow');
-    //     $(this).find('img').removeClass('img-responsive').addClass('instr-image-enlarged')},
-    //     function () {
-    //     $(this).find('img').addClass('img-responsive').removeClass('instr-image-enlarged')
-    // });
-
-
     $(document).on('click', 'a[href^="#"]', function(e) {
         // target element id
         var id = $(this).attr('href');
@@ -65,17 +56,6 @@ $(document).ready(function () {
 
 
 });
-
-function showMoreImages() {
-    $('#show-more-images-link').addClass('hidden');
-
-    $('#hidden-images').removeClass('hidden').animate({
-            opacity: 0
-        }, 0, function () {
-            $('#hidden-images').animate({opacity: 1}, 800)
-        }
-    );
-}
 
 function replaceButtons() {
     var buttons = $('#abbuttons').clone();
