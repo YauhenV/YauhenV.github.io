@@ -1,7 +1,13 @@
 $(document).ready(function () {
     mobileSize();
     coloredSigns();
-    arrowJump();
+
+    window.addEventListener('scroll', function () {
+        if(window.scrollY >= 400) {
+            $('#arrow-down').removeClass('animated infinite bounce');
+        }
+    });
+
     $(".four-reasons-div").hover(
         function () {
         $(this).find('i').addClass('animated tada infinite')},
@@ -83,15 +89,3 @@ function coloredSigns() {
     }
 }
 
-function arrowJump() {
-    console.log('meow');
-    $("#arrow-down").animate({
-
-        transform: 'translateY(50px)'
-    }, 1000, function() {
-        $("#arrow-down").animate({
-            transform: 'translateY(-50px)'
-        }, 800, arrowJump());
-    });
-    console.log('meow');
-}

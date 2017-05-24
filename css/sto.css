@@ -309,8 +309,22 @@ h2 {
 
 .tools-body h3, .tools-body i {
     display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.tools-body i {
+    line-height: 81%;
 }
 
 #arrow-down {
     transform: translateY(0);
+}
+
+.fotorama__caption__wrap {
+    background-color: rgba(185, 0, 0, 0.55);
+    color: white;
+}
+
+.fotorama__caption {
+    text-align: center;
 }
